@@ -1,5 +1,7 @@
 # Project-Zoo-
 
+# https://online.visual-paradigm.com/w/zugwtwny/diagrams/#diagram:workspace=zugwtwny&proj=0&id=1
+
 #  Vytvořte následující textovou verzi hry typu Travian, SimCity atp. Tedy budovatelskou strategii, kde budete mít grid představující svět. V tomto světě budete stavět různé typy budov, které budou generovat zdroje použitelné pro další budování. Můžete do hry zapojit i třeba prvek boje, sabotáže atp. V průběhu semestru si budeme ukazovat různé koncepty, které budou pro hru použitelné.
 
 #  Hodnocení:
