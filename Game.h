@@ -9,13 +9,14 @@
 
 class Game {
 //    Grid* m_grid;
+    Game();
     void printIntroduction() const;
     void printOptions() const;
-    char waitForInput() const;
+    int waitForInput() const;
     void printEnd() const;
-    void processInput(char input);
+    void processInput(int input);
+    void start();
 //    Position choicePosition();
 };
-
 
 #endif //PROJECT_GAME_H

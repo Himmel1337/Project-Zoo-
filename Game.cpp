@@ -3,12 +3,12 @@
 //
 
 #include "Game.h"
-#include "Grid.h"
-#include "Position.h"
+//#include "Grid.h"
+//#include "Position.h"
 #include <iostream>
 
 Game::Game() {
-    m_grid = new Grid();
+//    m_grid = new Grid();
 }
 
 void Game::printIntroduction() const {
@@ -33,7 +33,7 @@ void Game::start() {
     printIntroduction();
 
     while (true) {
-        m_grid->print();
+//        m_grid->print();
         printOptions();
         int input = waitForInput();
         processInput(input);
@@ -57,11 +57,11 @@ void Game::processInput(int input) {
     }
 }
 
-Position Game::choicePosition(){
-
-    if (m_grid->checkDirection(x, y)) {
-        m_grid->putTheBuilding(x, y);
-    } else {
-        std::cout << "You cannot put a building off the grid" << std::endl;
-    }
-}
+//Position Game::choicePosition(){
+//
+//    if (m_grid->checkDirection(x, y)) {
+//        m_grid->putTheBuilding(x, y);
+//    } else {
+//        std::cout << "You cannot put a building off the grid" << std::endl;
+//    }
+//}
