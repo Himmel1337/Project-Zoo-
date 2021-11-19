@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xkudla/Documents/Mendel/ZOO/Project/Game.cpp
+Game.h
+/home/xkudla/Documents/Mendel/ZOO/Project/Game.h
+iostream
+-
+
+/home/xkudla/Documents/Mendel/ZOO/Project/Game.h
+
+/home/xkudla/Documents/Mendel/ZOO/Project/Grid.cpp
+Grid.h
+/home/xkudla/Documents/Mendel/ZOO/Project/Grid.h
+
+/home/xkudla/Documents/Mendel/ZOO/Project/Grid.h
+vector
+-
+array
+-
+
