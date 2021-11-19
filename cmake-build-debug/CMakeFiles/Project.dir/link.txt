@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/Game.cpp.o CMakeFiles/Project.dir/Grid.cpp.o -o Project 
