@@ -1,6 +1,10 @@
 #include <iostream>
+#include "Game.h"
+#include "Grid.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Game* game = new Game();
+    game->start();
+
     return 0;
 }

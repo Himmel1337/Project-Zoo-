@@ -3,12 +3,12 @@
 //
 
 #include "Game.h"
-//#include "Grid.h"
+#include "Grid.h"
 //#include "Position.h"
 #include <iostream>
 
 Game::Game() {
-//    m_grid = new Grid();
+    m_grid = new Grid();
 }
 
 void Game::printIntroduction() const {
@@ -33,7 +33,7 @@ void Game::start() {
     printIntroduction();
 
     while (true) {
-//        m_grid->print();
+        m_grid->print();
         printOptions();
         int input = waitForInput();
         processInput(input);
@@ -41,7 +41,7 @@ void Game::start() {
 }
 
 void Game::processInput(int input) {
-    if (input == '000') {
+    if (input == '9') {
         printEnd();
         exit(0);
     } else if (input == '0') {

@@ -4,10 +4,11 @@
 
 #ifndef PROJECT_GRID_H
 #define PROJECT_GRID_H
-//#include "Building"
-//#include "Position"
+#include <iostream>
 #include <vector>
 #include <array>
+//#include "Building"
+//#include "Position"
 
 class Grid {
 //    std::vector<Bulding*> m_bulding;
