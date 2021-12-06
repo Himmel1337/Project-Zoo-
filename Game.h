@@ -5,7 +5,7 @@
 #ifndef PROJECT_GAME_H
 #define PROJECT_GAME_H
 #include "Grid.h"
-//#include "Position"
+#include "Position.h"
 
 class Game {
     Grid* m_grid;

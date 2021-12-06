@@ -4,7 +4,7 @@
 
 #include "Game.h"
 #include "Grid.h"
-//#include "Position.h"
+#include "Position.h"
 #include <iostream>
 
 Game::Game() {
