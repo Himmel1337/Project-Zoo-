@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g -Wl,--enable-auto-import CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/Game.cpp.o CMakeFiles/Project.dir/Grid.cpp.o CMakeFiles/Project.dir/Building.cpp.o CMakeFiles/Project.dir/Position.cpp.o -o Project.exe -Wl,--out-implib,libProject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

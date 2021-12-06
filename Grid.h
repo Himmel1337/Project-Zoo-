@@ -7,14 +7,15 @@
 #include <iostream>
 #include <vector>
 #include <array>
-//#include "Building"
-//#include "Position"
+#include "Building.h"
+#include "Position.h"
 
 class Grid {
-//    std::vector<Bulding*> m_bulding;
-    std::array<std::array<int, 5>, 5> m_grid;
+    std::vector<Building*> m_building;
+    std::array<std::array<char, 5>, 5> m_grid;
 
 public:
+
     Grid();
     void print() const;
     bool checkDirection(int x, int y) const;
