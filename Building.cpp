@@ -6,7 +6,7 @@
 
 Building::Building(std::string type, Position position){
     m_type= type;
-    m_position = Position{0, 0};
+    m_position = Position{};
 }
 
 void Building::setPosition(int x, int y) {
