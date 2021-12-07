@@ -32,16 +32,15 @@ bool Grid::checkDirection(int x, int y) const{
 }
 
 void Grid::putTheBulding(){
-    std::string type = "";
-    std::cout << "Input type building (string) : " << std::endl;
-    std::cin >> type;
     int x = 0;
-    std::cout << "Input row: " << std::endl;
+    std::cout << "Input row [1-5]: " << std::endl;
     std::cin >> x;
+    x--;
     int y = 0;
-    std::cout << "Input column: " << std::endl;
+    std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
-    m_building.push_back(new Building(type, {x, y}));
+    y--;
+    m_building.push_back(new Building({x, y}));
     m_grid.at(x).at(y) = Building::symbol;
 }
 

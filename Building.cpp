@@ -4,8 +4,8 @@
 
 #include "Building.h"
 
-Building::Building(std::string type, Position position){
-    m_type= type;
+Building::Building(Position position){
+    m_type= "@";
     m_position = Position{};
 }
 

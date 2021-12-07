@@ -16,7 +16,8 @@ void Game::printIntroduction() const {
 }
 
 void Game::printOptions() const {
-    std::cout << "[0] "<< "Put the bulding" << std::endl;
+    std::cout << "[1] "<< "Put the bulding" << std::endl;
+    std::cout << "[8] "<< "Skip turn" << std::endl;
     std::cout << "[9] "<< "Exit game" << std::endl;
     std::cout << "Input number for action: " << std::endl;
 }
@@ -43,17 +44,17 @@ void Game::start() {
 }
 
 void Game::processInput(int input) {
-    if (input == '9') {
+    if (input == 9) {
         printEnd();
         exit(0);
-    } else if (input == 0) {
+    } else if (input == 1) {
         m_grid->putTheBulding();
     } else if (input == 1) {
         std::cout << "0" << std::endl;
     } else if (input == 2) {
         std::cout << "0" << std::endl;
-    } else if (input == 3) {
-        std::cout << "0" << std::endl;
+    } else if (input == 8) {
+        std::cout << "The move is missed" << std::endl;
     } else {
         std::cout << "Unsupported option!" << std::endl;
     }

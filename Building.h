@@ -11,7 +11,7 @@ class Building {
     std::string m_type;
     Position m_position{};
 public:
-    Building(std::string type, Position position);
+    Building(Position position);
     static const char symbol = '@';
     std::string getType();
     Position getPosition();
