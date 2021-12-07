@@ -16,6 +16,8 @@ void Game::printIntroduction() const {
 }
 
 void Game::printOptions() const {
+    std::cout << "[0] "<< "Put the bulding" << std::endl;
+    std::cout << "[9] "<< "Exit game" << std::endl;
     std::cout << "Input number for action: " << std::endl;
 }
 
@@ -44,21 +46,20 @@ void Game::processInput(int input) {
     if (input == '9') {
         printEnd();
         exit(0);
-    } else if (input == '0') {
-
-    } else if (input == '1') {
-
-    } else if (input == '2') {
-
-    } else if (input == '3') {
-
+    } else if (input == 0) {
+        m_grid->putTheBulding();
+    } else if (input == 1) {
+        std::cout << "0" << std::endl;
+    } else if (input == 2) {
+        std::cout << "0" << std::endl;
+    } else if (input == 3) {
+        std::cout << "0" << std::endl;
     } else {
         std::cout << "Unsupported option!" << std::endl;
     }
 }
 
 //Position Game::choicePosition(){
-//
 //    if (m_grid->checkDirection(x, y)) {
 //        m_grid->putTheBuilding(x, y);
 //    } else {

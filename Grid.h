@@ -19,7 +19,7 @@ public:
     Grid();
     void print() const;
     bool checkDirection(int x, int y) const;
-    void putTheBulding(int x, int y);
+    void putTheBulding();
     void destroyBuilding(int x, int y);
     ~Grid();
 };

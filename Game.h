@@ -15,7 +15,7 @@ class Game {
     int waitForInput() const;
     void printEnd() const;
     void processInput(int input);
-    //    Position choicePosition();
+    Position choicePosition();
 
 public:
     Game();
