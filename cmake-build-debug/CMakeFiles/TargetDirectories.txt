@@ -1,3 +1,0 @@
-/cygdrive/c/Users/pco4n/Documents/GitHub/Project-Zoo-/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Users/pco4n/Documents/GitHub/Project-Zoo-/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Users/pco4n/Documents/GitHub/Project-Zoo-/cmake-build-debug/CMakeFiles/Project.dir
