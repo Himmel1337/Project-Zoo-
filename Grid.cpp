@@ -28,7 +28,12 @@ void Grid::print() const {
 
 
 bool Grid::checkDirection(int x, int y) const{
-    return 0;
+    if (m_grid.at(x).at(y) == '0'){
+        return true;
+    } else {
+        std::cout << "There is already a building in the cell" << std::endl;
+        return false;
+    }
 }
 
 void Grid::putTheBulding(){
@@ -40,8 +45,10 @@ void Grid::putTheBulding(){
     std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
     y--;
-    m_building.push_back(new Building({x, y}));
-    m_grid.at(x).at(y) = Building::symbol;
+    if (checkDirection(x, y) == true){
+        m_building.push_back(new Building({x, y}));
+        m_grid.at(x).at(y) = Building::symbol;
+    }
 }
 
 void Grid::destroyBuilding(int x, int y){
