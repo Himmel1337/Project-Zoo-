@@ -6,13 +6,16 @@
 
 
 Player::Player(){
-    m_money=1000;
-    m_wood=100;
-    m_steel=50;
+    m_money = 1000;
+    m_wood = 100;
+    m_steel = 50;
 }
 
 void Player::printInfoAboutPlayer() {
-    std::cout<<"Player money "<<m_money<<"\nWood: "<<m_wood<<"\nSteel: "<<m_steel<<std::endl;
+    std::cout << "Player resource" << std::endl;
+    std::cout << "money: " << m_money << std::endl;
+    std::cout << "Wood: " << m_wood << std::endl;
+    std::cout << "Steel: " << m_steel << std::endl;
 }
 
 int Player::getMoney() {

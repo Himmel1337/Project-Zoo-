@@ -44,11 +44,32 @@ void Grid::setPlayerResources(Player * player){
 
 bool Grid::checkResources(Building* building) {
 
-    if ((m_playerMoney>=building->getCurrentPriceInM()) and (m_playerWood>=building->getCurrentPriceInW() and (m_playerSteel>=building->getCurrentPriceInS()))){
+    if ((m_playerMoney >= building->getCurrentPriceInM())
+    and (m_playerWood >= building->getCurrentPriceInW()
+    and (m_playerSteel >= building->getCurrentPriceInS()))){
         return true;
     } else {
         return false;
-        std::cout<<""<<std::endl;
+        std::cout << "Нou don't have enough resources" << std::endl;
+    }
+}
+
+char Grid::getTypeBuilding(){
+    std::cout << "Select building type" << std::endl;
+    std::cout << "[1]" << " Bank ($) " << std::endl;
+    std::cout << "[2]" << " Smeltery (@) " << std::endl;
+    std::cout << "[3]" << " Sawmill (#) " << std::endl;
+    int choiseBuilding;
+    std::cin >> choiseBuilding;
+    if(choiseBuilding == 1){
+        return '$';
+    } else if(choiseBuilding == 2){
+        return '@';
+    } else if (choiseBuilding == 3){
+        return '#';
+    } else {
+        std::cout << "Wrong choice of building" << std::endl;
+        return '0';
     }
 }
 
@@ -63,9 +84,13 @@ void Grid::putTheBulding(){
     std::cin >> y;
     y--;
 
-    if (checkDirection(x, y) == true)/* and(checkResources() == true)*/{
-        m_building.push_back(new Building({x, y}));
-        m_grid.at(x).at(y) = Building::symbol;
+    char type = getTypeBuilding();
+
+    if (type != '0'){
+        if (checkDirection(x, y) == true)/* and(checkResources() == true)*/{
+            m_building.push_back(new Building({x, y}, type));
+            m_grid.at(x).at(y) = type;
+        }
     }
 }
 

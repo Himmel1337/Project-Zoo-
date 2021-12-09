@@ -25,6 +25,7 @@ public:
     void print() const;
     bool checkDirection(int x, int y) const;
     bool checkResources(Building*);
+    char getTypeBuilding();
     void setPlayerResources(Player*);
     void putTheBulding();
     void destroyBuilding(int x, int y);

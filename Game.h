@@ -5,10 +5,12 @@
 #ifndef PROJECT_GAME_H
 #define PROJECT_GAME_H
 #include "Grid.h"
+#include "Player.h"
 #include "Position.h"
 
 class Game {
     Grid* m_grid;
+    Player* m_player;
 
     void printIntroduction() const;
     void printOptions() const;

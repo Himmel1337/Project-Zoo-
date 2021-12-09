@@ -4,12 +4,33 @@
 
 #include "Building.h"
 
-Building::Building(Position position, int PriceInM, int PriceInW, int PriceInS){
-    m_type= "@";
+Building::Building(Position position, char type){
+    setType(type);
+    setResource(type);
     m_position = Position{};
-    m_price[0]=PriceInM;
-    m_price[1]=PriceInW;
-    m_price[2]=PriceInS;
+
+}
+
+void Building::setType(char type) {
+    m_type = type;
+}
+
+void Building::setResource(char type){
+    if (type == '$'){
+        m_price.at(0) = 300;
+        m_price.at(1) = 30;
+        m_price.at(2) = 10;
+    } else if (type == '@') {
+        m_price.at(0) = 500;
+        m_price.at(1) = 60;
+        m_price.at(2) = 20;
+    } else if (type == '#'){
+        m_price.at(0) = 700;
+        m_price.at(1) = 60;
+        m_price.at(2) = 60;
+    } else {
+        std::cout << "Building is not exist" << std::endl;
+    }
 }
 
 void Building::setPosition(int x, int y) {
@@ -18,22 +39,22 @@ void Building::setPosition(int x, int y) {
 }
 
 int Building::getCurrentPriceInM() {
-    m_currentPrice=m_price[0];
+    m_currentPrice = m_price.at(0);
 }
 
 int Building::getCurrentPriceInW() {
-    m_currentPrice=m_price[1];
+    m_currentPrice = m_price.at(1);
 }
 
 int Building::getCurrentPriceInS() {
-    m_currentPrice=m_price[2];
+    m_currentPrice = m_price.at(2);
 }
 
 Position Building::getPosition() {
     return m_position;
 }
 
-std::string Building::getType() {
+char Building::getType() {
     return m_type;
 }
 

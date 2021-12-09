@@ -1,0 +1,24 @@
+# ninja log v5
+1	820	1638902807979776557	CMakeFiles/Project.dir/main.cpp.o	54064651e5f1fcbd
+1	40	1638864853615609036	CMakeFiles/Project.dir/Position.cpp.o	ca13e93df6efadea
+1	424	1638903141629704738	CMakeFiles/Project.dir/Game.cpp.o	550d51868be9fa13
+2	610	1638902807767771952	CMakeFiles/Project.dir/Building.cpp.o	5e41b0a158adfd2
+1	481	1638903141689704690	CMakeFiles/Project.dir/Grid.cpp.o	79dabb241ee9a783
+481	570	1638903141777704621	Project	e6a4245aa94ab35
+2	819	1639075934606757259	CMakeFiles/Project.dir/main.cpp.o	54064651e5f1fcbd
+2	1174	1639075934962758549	CMakeFiles/Project.dir/Game.cpp.o	550d51868be9fa13
+6	1175	1639075934962758549	CMakeFiles/Project.dir/Building.cpp.o	5e41b0a158adfd2
+7	1278	1639075935066758927	CMakeFiles/Project.dir/Player.cpp.o	af6bddf6740ebf8e
+5	1452	1639075935242759563	CMakeFiles/Project.dir/Grid.cpp.o	79dabb241ee9a783
+1	490	1639076260987706915	CMakeFiles/Project.dir/Game.cpp.o	550d51868be9fa13
+1	507	1639076261007706962	CMakeFiles/Project.dir/Player.cpp.o	af6bddf6740ebf8e
+1	572	1639076261071707111	CMakeFiles/Project.dir/main.cpp.o	54064651e5f1fcbd
+3	635	1639077761240418416	CMakeFiles/Project.dir/Building.cpp.o	5e41b0a158adfd2
+1	676	1639077761284418745	CMakeFiles/Project.dir/main.cpp.o	54064651e5f1fcbd
+1	733	1639077761340419163	CMakeFiles/Project.dir/Game.cpp.o	550d51868be9fa13
+2	763	1639077761368419373	CMakeFiles/Project.dir/Grid.cpp.o	79dabb241ee9a783
+763	869	1639077761472420150	Project	36c77a4a0e7726
+0	404	1639077860617119695	CMakeFiles/Project.dir/Game.cpp.o	550d51868be9fa13
+404	499	1639077860713120335	Project	36c77a4a0e7726
+1	404	1639077939189620970	CMakeFiles/Project.dir/Game.cpp.o	550d51868be9fa13
+404	523	1639077939309621704	Project	36c77a4a0e7726

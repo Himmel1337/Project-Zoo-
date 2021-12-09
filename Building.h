@@ -10,20 +10,20 @@
 #include "Player.h"
 
 class Building {
-    std::string m_type;
+    char m_type;
     std::array<int, 3> m_price;
     int m_currentPrice;
     Position m_position{};
 public:
-    Building(Position position, int PriceInM, int PriceInW, int PriceInS);
-    Building(Position position);
-    static const char symbol = '@';
-    std::string getType();
+    Building(Position position, char type);
+    char getType();
     int getCurrentPriceInM();
     int getCurrentPriceInW();
     int getCurrentPriceInS();
     Position getPosition();
     void setPosition(int x, int y);
+    void setType(char type);
+    void setResource(char type);
     ~Building();
 };
 
