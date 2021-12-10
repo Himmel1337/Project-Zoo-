@@ -14,20 +14,16 @@
 class Grid {
     std::vector<Building*> m_building;
     std::array<std::array<char, 5>, 5> m_grid;
-    int m_currentPrice=0;
-    int m_playerMoney;
-    int m_playerWood;
-    int m_playerSteel;
 
 public:
 
     Grid();
     void print() const;
     bool checkDirection(int x, int y) const;
-    bool checkResources(Building*);
-    char getTypeBuilding();
-    void setPlayerResources(Player*);
-    void putTheBulding();
+    bool checkResources(Player* player) const;
+    char getTypeBuilding() const;
+    void setPlayerResources(Player* player);
+    void putTheBulding(Player* player);
     void destroyBuilding(int x, int y);
     ~Grid();
 };

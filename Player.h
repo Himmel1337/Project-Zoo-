@@ -11,6 +11,9 @@ class Player {
     int m_money;
     int m_wood;
     int m_steel;
+    int m_profitMoney;
+    int m_profitWood;
+    int m_profitSteel;
 public:
     Player();
 
@@ -19,6 +22,11 @@ public:
     int getMoney();
     int getWood();
     int getSteel();
+    void setMoney(int money);
+    void setWood(int wood);
+    void setSteel(int steel);
+    void setProfit(int profit, char type);
+    void addResourceTurn();
     ~Player();
 };
 

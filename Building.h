@@ -12,14 +12,15 @@
 class Building {
     char m_type;
     std::array<int, 3> m_price;
-    int m_currentPrice;
     Position m_position{};
+    int m_profit;
 public:
     Building(Position position, char type);
     char getType();
     int getCurrentPriceInM();
     int getCurrentPriceInW();
     int getCurrentPriceInS();
+    int getProfit();
     Position getPosition();
     void setPosition(int x, int y);
     void setType(char type);

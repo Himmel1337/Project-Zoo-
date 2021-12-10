@@ -42,6 +42,7 @@ void Game::start() {
         printOptions();
         int input = waitForInput();
         processInput(input);
+        m_player->addResourceTurn();
     }
 }
 
@@ -50,7 +51,7 @@ void Game::processInput(int input) {
         printEnd();
         exit(0);
     } else if (input == 1) {
-        m_grid->putTheBulding();
+        m_grid->putTheBulding(m_player);
     } else if (input == 2) {
         m_player->printInfoAboutPlayer();
     } else if (input == 3) {
@@ -60,6 +61,11 @@ void Game::processInput(int input) {
     } else {
         std::cout << "Unsupported option!" << std::endl;
     }
+}
+
+Game::~Game(){
+//    delete m_player;
+//    delete m_grid;
 }
 
 //Position Game::choicePosition(){

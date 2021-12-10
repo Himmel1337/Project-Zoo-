@@ -36,25 +36,21 @@ bool Grid::checkDirection(int x, int y) const{
     }
 }
 
-void Grid::setPlayerResources(Player * player){
-    m_playerMoney=player->getMoney();
-    m_playerWood=player->getWood();
-    m_playerSteel=player->getSteel();
+
+
+bool Grid::checkResources(Player* player) const{
+
+//    if ((player->getMoney() >->getCurrentPriceInM())
+//    and (player->getWood() >= building->getCurrentPriceInW()
+//    and (player->getSteel() >= building->getCurrentPriceInS()))){
+//        return true;
+//    } else {
+//        return false;
+//        std::cout << "Нou don't have enough resources" << std::endl;
+//    }
 }
 
-bool Grid::checkResources(Building* building) {
-
-    if ((m_playerMoney >= building->getCurrentPriceInM())
-    and (m_playerWood >= building->getCurrentPriceInW()
-    and (m_playerSteel >= building->getCurrentPriceInS()))){
-        return true;
-    } else {
-        return false;
-        std::cout << "Нou don't have enough resources" << std::endl;
-    }
-}
-
-char Grid::getTypeBuilding(){
+char Grid::getTypeBuilding() const{
     std::cout << "Select building type" << std::endl;
     std::cout << "[1]" << " Bank ($) " << std::endl;
     std::cout << "[2]" << " Smeltery (@) " << std::endl;
@@ -74,7 +70,7 @@ char Grid::getTypeBuilding(){
 }
 
 
-void Grid::putTheBulding(){
+void Grid::putTheBulding(Player* player){
     int x = 0;
     std::cout << "Input row [1-5]: " << std::endl;
     std::cin >> x;
@@ -89,6 +85,10 @@ void Grid::putTheBulding(){
     if (type != '0'){
         if (checkDirection(x, y) == true)/* and(checkResources() == true)*/{
             m_building.push_back(new Building({x, y}, type));
+            player->setProfit(m_building.at(m_building.size() - 1)->getProfit(), type);
+            player->setMoney(- m_building.at(m_building.size() - 1)->getCurrentPriceInM());
+            player->setWood(- m_building.at(m_building.size() - 1)->getCurrentPriceInW());
+            player->setSteel(- m_building.at(m_building.size() - 1)->getCurrentPriceInS());
             m_grid.at(x).at(y) = type;
         }
     }
