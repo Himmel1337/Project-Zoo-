@@ -98,6 +98,4 @@ void Grid::destroyBuilding(int x, int y){
 
 }
 
-//Grid::~Grid(){
-//    delete m_building;
-//}
+Grid::~Grid(){}

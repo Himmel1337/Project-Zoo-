@@ -27,6 +27,7 @@ public:
     void setSteel(int steel);
     void setProfit(int profit, char type);
     void addResourceTurn();
+    void market(int input);
     ~Player();
 };
 

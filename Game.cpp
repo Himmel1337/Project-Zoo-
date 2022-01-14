@@ -19,6 +19,7 @@ void Game::printIntroduction() const {
 void Game::printOptions() const {
     std::cout << "[1] " << "Put the bulding" << std::endl;
     std::cout << "[2] " << "Print resource player" << std::endl;
+    std::cout << "[3] " << "Market" << std::endl;
     std::cout << "[8] " << "Skip turn" << std::endl;
     std::cout << "[9] " << "Exit game" << std::endl;
     std::cout << "Input number for action: " << std::endl;
@@ -47,25 +48,31 @@ void Game::start() {
 }
 
 void Game::processInput(int input) {
-    if (input == 9) {
-        printEnd();
-        exit(0);
-    } else if (input == 1) {
-        m_grid->putTheBulding(m_player);
-    } else if (input == 2) {
-        m_player->printInfoAboutPlayer();
-    } else if (input == 3) {
-        std::cout << "0" << std::endl;
-    } else if (input == 8) {
-        std::cout << "The move is missed" << std::endl;
-    } else {
-        std::cout << "Unsupported option!" << std::endl;
+    switch (input) {
+        case 9: printEnd(); exit(0);
+        case 1: m_grid->putTheBulding(m_player); break;
+        case 2: m_player->printInfoAboutPlayer(); break;
+        case 3:
+            std::cout << "Market" << std::endl;
+            std::cout << "[1] " << "Buy 10 wood for 100 money" << std::endl;
+            std::cout << "[2] " << "Buy 10 steel for 100 money" << std::endl;
+            std::cout << "[3] " << "Sell 10 wood for 80 money" << std::endl;
+            std::cout << "[4] " << "Sell 10 steel for 80 money" << std::endl;
+            std::cout << "[5] " << "Return" << std::endl;
+            std::cout << "Input: " << std::endl;
+            int input;
+            std::cin >> input;
+            if (input == 5) start();
+            m_player->market(input);
+        break;
+        case 8: std::cout << "The move is missed" << std::endl; break;
+        default: std::cout << "Unsupported option!" << std::endl;
     }
 }
 
 Game::~Game(){
-//    delete m_player;
-//    delete m_grid;
+    delete m_player;
+    delete m_grid;
 }
 
 //Position Game::choicePosition(){

@@ -61,3 +61,35 @@ void Player::addResourceTurn(){
     setWood(m_profitWood);
     setSteel(m_profitSteel);
 }
+
+void Player::market(int input){
+    switch (input) {
+        case 1:
+            if (m_money >= 100) {
+                m_money -= 100;
+                m_wood += 10;
+            } else std::cout << "Нou don't have enough money";
+            break;
+        case 2:
+            if (m_money >= 100) {
+                m_money -= 100;
+                m_steel += 10;
+            } else std::cout << "Нou don't have enough money";
+            break;
+        case 3:
+            if (m_wood >= 10) {
+                m_money += 80;
+                m_wood -= 10;
+            } else std::cout << "Нou don't have enough wood";
+            break;
+        case 4:
+            if (m_steel >= 10) {
+                m_money += 80;
+                m_steel -= 10;
+            } else std::cout << "Нou don't have enough steel";
+            break;
+        default: std::cout << "Unsupported option!" << std::endl;
+    }
+}
+
+Player::~Player(){}
