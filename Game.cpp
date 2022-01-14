@@ -3,8 +3,6 @@
 //
 
 #include "Game.h"
-#include "Grid.h"
-#include "Position.h"
 #include <iostream>
 
 Game::Game() {
@@ -47,10 +45,28 @@ void Game::start() {
     }
 }
 
+void Game::printAvailablePosition() {
+    int x = 0;
+    std::cout << "Input row [1-5]: " << std::endl;
+    std::cin >> x;
+    x--;
+    int y = 0;
+    std::cout << "Input column [1-5]: " << std::endl;
+    std::cin >> y;
+    y--;
+    if(m_grid->checkDirection(x,y) == false){
+        start();
+    }
+    int buildingType=m_grid->getTypeBuilding();
+    m_player->putTheBuilding(buildingType);
+    if(m_player->checkResources(buildingType) == true){
+        m_grid->putTheBulding(buildingType, x, y);
+    }
+}
 void Game::processInput(int input) {
     switch (input) {
         case 9: printEnd(); exit(0);
-        case 1: m_grid->putTheBulding(m_player); break;
+        case 1: printAvailablePosition(); break;
         case 2: m_player->printInfoAboutPlayer(); break;
         case 3:
             std::cout << "Market" << std::endl;
@@ -74,11 +90,3 @@ Game::~Game(){
     delete m_player;
     delete m_grid;
 }
-
-//Position Game::choicePosition(){
-//    if (m_grid->checkDirection(x, y)) {
-//        m_grid->putTheBuilding(x, y);
-//    } else {
-//        std::cout << "You cannot put a building off the grid" << std::endl;
-//    }
-//}

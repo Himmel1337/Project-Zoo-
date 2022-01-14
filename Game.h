@@ -6,7 +6,7 @@
 #define PROJECT_GAME_H
 #include "Grid.h"
 #include "Player.h"
-#include "Position.h"
+
 
 class Game {
     Grid* m_grid;
@@ -14,10 +14,10 @@ class Game {
 
     void printIntroduction() const;
     void printOptions() const;
+    void printAvailablePosition();
     int waitForInput() const;
     void printEnd() const;
     void processInput(int input);
-    Position choicePosition();
 
 public:
     Game();

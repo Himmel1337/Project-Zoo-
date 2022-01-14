@@ -56,19 +56,8 @@ int Grid::getTypeBuilding() const{
 }
 
 
-void Grid::putTheBulding(Player* player){
-    int x = 0;
-    std::cout << "Input row [1-5]: " << std::endl;
-    std::cin >> x;
-    x--;
-    int y = 0;
-    std::cout << "Input column [1-5]: " << std::endl;
-    std::cin >> y;
-    y--;
-
-    int type = getTypeBuilding();
+void Grid::putTheBulding(int type, int x, int y){
     m_grid.at(x).at(y) = type;
-    
 }
 
 void Grid::destroyBuilding(int x, int y){

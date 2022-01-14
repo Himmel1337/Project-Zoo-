@@ -8,7 +8,6 @@
 #include <vector>
 #include <array>
 #include "Building.h"
-#include "Position.h"
 #include "Player.h"
 
 class Grid {
@@ -23,7 +22,7 @@ public:
     bool checkResources(Player* player) const;
     int getTypeBuilding() const;
     void setPlayerResources(Player* player);
-    void putTheBulding(Player* player);
+    void putTheBulding(int type, int x, int y);
     void destroyBuilding(int x, int y);
     ~Grid();
 };

@@ -4,13 +4,13 @@
 
 #include "Building.h"
 
-Building::Building(Position position, char type){
+Building::Building(int type){
     setType(type);
-    m_position = Position{};
+
 }
 Building::Building(){};
 
-void Building::setType(char type) {
+void Building::setType(int type) {
     m_type = type;
     if (type == 1){
         m_price.at(0) = 300;
@@ -33,10 +33,7 @@ void Building::setType(char type) {
 }
 
 
-void Building::setPosition(int x, int y) {
-    m_position.x = x;
-    m_position.y = y;
-}
+
 
 std::array<int, 3> Building::getCurrentPrice() {
     return m_price;
@@ -46,11 +43,7 @@ int Building::getProfit(){
     return m_profit;
 }
 
-Position Building::getPosition() {
-    return m_position;
-}
-
-char Building::getType() {
+int Building::getType() {
     return m_type;
 }
 
