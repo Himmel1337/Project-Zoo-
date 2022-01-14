@@ -6,11 +6,11 @@
 
 Grid::Grid(){
 
-    m_grid = std::array<std::array<char, 5>, 5>();
+    m_grid = std::array<std::array<int, 5>, 5>();
 
     for (auto &row: m_grid) {
         for (auto &column: row) {
-            column = '0';
+            column = 0;
         }
     }
 
@@ -28,7 +28,7 @@ void Grid::print() const {
 
 
 bool Grid::checkDirection(int x, int y) const{
-    if (m_grid.at(x).at(y) == '0'){
+    if (m_grid.at(x).at(y) == 0){
         return true;
     } else {
         std::cout << "There is already a building in the cell" << std::endl;
@@ -36,36 +36,22 @@ bool Grid::checkDirection(int x, int y) const{
     }
 }
 
-
-
-bool Grid::checkResources(Player* player) const{
-
-//    if ((player->getMoney() >->getCurrentPriceInM())
-//    and (player->getWood() >= building->getCurrentPriceInW()
-//    and (player->getSteel() >= building->getCurrentPriceInS()))){
-//        return true;
-//    } else {
-//        return false;
-//        std::cout << "Нou don't have enough resources" << std::endl;
-//    }
-}
-
-char Grid::getTypeBuilding() const{
+int Grid::getTypeBuilding() const{
     std::cout << "Select building type" << std::endl;
-    std::cout << "[1]" << " Bank ($) " << std::endl;
-    std::cout << "[2]" << " Smeltery (@) " << std::endl;
-    std::cout << "[3]" << " Sawmill (#) " << std::endl;
+    std::cout << "[1]" << " Bank (1) " << std::endl;
+    std::cout << "[2]" << " Smeltery (2) " << std::endl;
+    std::cout << "[3]" << " Sawmill (3) " << std::endl;
     int choiseBuilding;
     std::cin >> choiseBuilding;
     if(choiseBuilding == 1){
-        return '$';
+        return 1;
     } else if(choiseBuilding == 2){
-        return '@';
+        return 2;
     } else if (choiseBuilding == 3){
-        return '#';
+        return 3;
     } else {
         std::cout << "Wrong choice of building" << std::endl;
-        return '0';
+        return 0;
     }
 }
 
@@ -80,18 +66,9 @@ void Grid::putTheBulding(Player* player){
     std::cin >> y;
     y--;
 
-    char type = getTypeBuilding();
-
-    if (type != '0'){
-        if (checkDirection(x, y) == true)/* and(checkResources() == true)*/{
-            m_building.push_back(new Building({x, y}, type));
-            player->setProfit(m_building.at(m_building.size() - 1)->getProfit(), type);
-            player->setMoney(- m_building.at(m_building.size() - 1)->getCurrentPriceInM());
-            player->setWood(- m_building.at(m_building.size() - 1)->getCurrentPriceInW());
-            player->setSteel(- m_building.at(m_building.size() - 1)->getCurrentPriceInS());
-            m_grid.at(x).at(y) = type;
-        }
-    }
+    int type = getTypeBuilding();
+    m_grid.at(x).at(y) = type;
+    
 }
 
 void Grid::destroyBuilding(int x, int y){

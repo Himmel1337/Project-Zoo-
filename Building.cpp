@@ -12,17 +12,17 @@ Building::Building(){};
 
 void Building::setType(char type) {
     m_type = type;
-    if (type == '$'){
+    if (type == 1){
         m_price.at(0) = 300;
         m_price.at(1) = 30;
         m_price.at(2) = 10;
         m_profit = 100;
-    } else if (type == '@') {
+    } else if (type == 2) {
         m_price.at(0) = 500;
         m_price.at(1) = 60;
         m_price.at(2) = 20;
         m_profit = 10;
-    } else if (type == '#'){
+    } else if (type == 3){
         m_price.at(0) = 700;
         m_price.at(1) = 60;
         m_price.at(2) = 60;

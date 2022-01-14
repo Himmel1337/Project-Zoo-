@@ -31,11 +31,11 @@ void Player::setResources(int count, int index) {
 }
 
 void Player::setProfit(int profit, char type){
-    if (type == '$'){
+    if (type == 1){
         m_profit.at(0) += profit;
-    } else if (type == '@'){
+    } else if (type == 2){
         m_profit.at(1) += profit;
-    } else if (type == '#'){
+    } else if (type == 3){
         m_profit.at(2) += profit;
     }
 }
@@ -52,12 +52,12 @@ bool Player::checkResources(char buildingType){
     delete building;
     return check;
 }
-/*void Player::addResourceTurn(){
-    setMoney(m_profitMoney);
-    setWood(m_profitWood);
-    setSteel(m_profitSteel);
+void Player::addResourceTurn(){
+    m_resources.at(0) += m_profit.at(0);
+    m_resources.at(1) += m_profit.at(1);
+    m_resources.at(2) += m_profit.at(2);
 }
-*/
+
 
 void Player::market(int input){
     switch (input) {

@@ -10,7 +10,7 @@
 #include "Player.h"
 
 class Building {
-    char m_type;
+    int m_type;
     std::array<int, 3> m_price;
     Position m_position{};
     int m_profit;

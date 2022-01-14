@@ -13,7 +13,7 @@
 
 class Grid {
     std::vector<Building*> m_building;
-    std::array<std::array<char, 5>, 5> m_grid;
+    std::array<std::array<int, 5>, 5> m_grid;
 
 public:
 
@@ -21,7 +21,7 @@ public:
     void print() const;
     bool checkDirection(int x, int y) const;
     bool checkResources(Player* player) const;
-    char getTypeBuilding() const;
+    int getTypeBuilding() const;
     void setPlayerResources(Player* player);
     void putTheBulding(Player* player);
     void destroyBuilding(int x, int y);
