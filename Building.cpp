@@ -6,15 +6,11 @@
 
 Building::Building(Position position, char type){
     setType(type);
-    setResource(type);
     m_position = Position{};
 }
 
 void Building::setType(char type) {
     m_type = type;
-}
-
-void Building::setResource(char type){
     if (type == '$'){
         m_price.at(0) = 300;
         m_price.at(1) = 30;
@@ -35,21 +31,14 @@ void Building::setResource(char type){
     }
 }
 
+
 void Building::setPosition(int x, int y) {
     m_position.x = x;
     m_position.y = y;
 }
 
-int Building::getCurrentPriceInM() {
-    return m_price.at(0);
-}
-
-int Building::getCurrentPriceInW() {
-    return m_price.at(1);
-}
-
-int Building::getCurrentPriceInS() {
-    return m_price.at(2);
+std::array<int, 3> Building::getCurrentPrice() {
+    return m_price;
 }
 
 int Building::getProfit(){

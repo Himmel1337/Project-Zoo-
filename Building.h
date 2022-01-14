@@ -17,14 +17,11 @@ class Building {
 public:
     Building(Position position, char type);
     char getType();
-    int getCurrentPriceInM();
-    int getCurrentPriceInW();
-    int getCurrentPriceInS();
+    std::array<int, 3> getCurrentPrice();
     int getProfit();
     Position getPosition();
     void setPosition(int x, int y);
     void setType(char type);
-    void setResource(char type);
     ~Building();
 };
 
