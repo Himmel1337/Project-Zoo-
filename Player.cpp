@@ -1,91 +1,88 @@
 //
-// Created by pco4n on 09.12.2021.
+// Created by xkochnev on 09.12.2021.
 //
 
 #include "Player.h"
 
 
 Player::Player(){
-    m_money = 10000;
-    m_wood = 200;
-    m_steel = 200;
-    m_profitMoney = 0;
-    m_profitWood = 0;
-    m_profitSteel = 0;
+    m_resources = {10000, 200, 200};
+    m_profit.at(0) = 0;
+    m_profit.at(1) = 0;
+    m_profit.at(2) = 0;
 }
 
 void Player::printInfoAboutPlayer() {
     std::cout << "Player resource" << std::endl;
-    std::cout << "money: " << m_money << std::endl;
-    std::cout << "Wood: " << m_wood << std::endl;
-    std::cout << "Steel: " << m_steel << std::endl;
-    std::cout << "Profit money: " << m_profitMoney << std::endl;
-    std::cout << "Profit Wood: " << m_profitWood << std::endl;
-    std::cout << "Profit Steel: " << m_profitSteel << std::endl;
+    std::cout << "money: " << m_resources.at(0) << std::endl;
+    std::cout << "Wood: " << m_resources.at(1) << std::endl;
+    std::cout << "Steel: " << m_resources.at(2) << std::endl;
+    std::cout << "Profit money: " << m_profit.at(0) << std::endl;
+    std::cout << "Profit Wood: " << m_profit.at(1) << std::endl;
+    std::cout << "Profit Steel: " << m_profit.at(2) << std::endl;
 }
 
-int Player::getMoney() {
-    return m_money;
+std::array<int, 3> Player::getResources() {
+    return m_resources;
 }
 
-int Player::getWood() {
-    return m_wood;
-}
-
-int Player::getSteel() {
-    return m_steel;
-}
-
-void Player::setMoney(int money){
-    m_money += money;
-}
-void Player::setWood(int wood){
-    m_wood += wood;
-}
-void Player::setSteel(int steel){
-    m_steel += steel;
+void Player::setResources(int count, int index) {
+    m_resources.at(index) += count;
 }
 
 void Player::setProfit(int profit, char type){
     if (type == '$'){
-        m_profitMoney += profit;
+        m_profit.at(0) += profit;
     } else if (type == '@'){
-        m_profitWood += profit;
+        m_profit.at(1) += profit;
     } else if (type == '#'){
-        m_profitSteel += profit;
+        m_profit.at(2) += profit;
     }
 }
 
-void Player::addResourceTurn(){
+bool Player::checkResources(char buildingType){
+    bool check;
+    Building *building = new Building();
+    building->setType(buildingType);
+    if (m_resources.at(0) >= building->getCurrentPrice().at(0) and
+        m_resources.at(1) >= building->getCurrentPrice().at(1) and
+        m_resources.at(2) >= building->getCurrentPrice().at(2)){
+        check = true;
+    } else check = false;
+    delete building;
+    return check;
+}
+/*void Player::addResourceTurn(){
     setMoney(m_profitMoney);
     setWood(m_profitWood);
     setSteel(m_profitSteel);
 }
+*/
 
 void Player::market(int input){
     switch (input) {
         case 1:
-            if (m_money >= 100) {
-                m_money -= 100;
-                m_wood += 10;
+            if (m_resources.at(0) >= 100) {
+                m_resources.at(0) -= 100;
+                m_resources.at(1) += 10;
             } else std::cout << "Нou don't have enough money";
             break;
         case 2:
-            if (m_money >= 100) {
-                m_money -= 100;
-                m_steel += 10;
+            if (m_resources.at(0) >= 100) {
+                m_resources.at(0) -= 100;
+                m_resources.at(2) += 10;
             } else std::cout << "Нou don't have enough money";
             break;
         case 3:
-            if (m_wood >= 10) {
-                m_money += 80;
-                m_wood -= 10;
+            if (m_resources.at(1) >= 10) {
+                m_resources.at(0) += 80;
+                m_resources.at(1) -= 10;
             } else std::cout << "Нou don't have enough wood";
             break;
         case 4:
-            if (m_steel >= 10) {
-                m_money += 80;
-                m_steel -= 10;
+            if (m_resources.at(2) >= 10) {
+                m_resources.at(0) += 80;
+                m_resources.at(2) -= 10;
             } else std::cout << "Нou don't have enough steel";
             break;
         default: std::cout << "Unsupported option!" << std::endl;

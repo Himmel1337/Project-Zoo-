@@ -16,6 +16,7 @@ class Building {
     int m_profit;
 public:
     Building(Position position, char type);
+    Building();
     char getType();
     std::array<int, 3> getCurrentPrice();
     int getProfit();

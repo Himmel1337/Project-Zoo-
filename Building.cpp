@@ -8,6 +8,7 @@ Building::Building(Position position, char type){
     setType(type);
     m_position = Position{};
 }
+Building::Building(){};
 
 void Building::setType(char type) {
     m_type = type;
