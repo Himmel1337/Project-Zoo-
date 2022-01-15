@@ -9,8 +9,8 @@
 class Foundry: public AbstractBuilding {
 public:
     int getType() override;
-    std::array<int, 3> Price() override;
-    int Profit() override;
+    std::array<int, 3> getPrice() override;
+    int getProfit() override;
 };
 
 

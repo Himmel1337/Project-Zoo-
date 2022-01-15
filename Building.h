@@ -7,8 +7,17 @@
 #include <iostream>
 #include <array>
 #include "Player.h"
+#include "../AbstractBuilding/AbstractBuilding.h"
+
 
 class Building {
+    AbstractBuilding* m_abstractBuilding;
+    std::array<AbstractBuilding*, 3> m_price;
+    AbstractBuilding* m_profit;
+public:
+    Building();
+
+    /*
     int m_type;
     std::array<int, 3> m_price;
     int m_profit;
@@ -20,6 +29,7 @@ public:
     int getType();
     void setType(int type);
     ~Building();
+     */
 };
 
 

@@ -4,6 +4,12 @@
 
 #include "Building.h"
 
+Building::Building() {
+}
+
+
+
+/*
 Building::Building(int type){
     setType(type);
 
@@ -54,4 +60,4 @@ Building::~Building() {
 
 
 
-
+*/

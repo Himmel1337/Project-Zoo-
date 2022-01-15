@@ -8,12 +8,12 @@ int Bank::getType() {
     return 1;
 }
 
-std::array<int, 3> Bank:: Price() {
+std::array<int, 3> Bank:: getPrice() {
     Price().at(0) = 300;
     Price().at(1) = 30;
     Price().at(2) = 10;
 }
 
-int Bank::Profit() {
+int Bank::getProfit() {
     return 100;
 }

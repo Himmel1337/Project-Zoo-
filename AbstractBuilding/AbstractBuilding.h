@@ -9,8 +9,8 @@
 
 class AbstractBuilding {
     virtual int getType() = 0;
-    virtual std::array<int, 3> Price() = 0;
-    virtual int Profit() = 0;
+    virtual std::array<int, 3> getPrice() = 0;
+    virtual int getProfit() = 0;
 };
 
 

@@ -8,12 +8,12 @@ int Sawmill::getType() {
     return 2;
 }
 
-std::array<int, 3> Sawmill:: Price() {
+std::array<int, 3> Sawmill:: getPrice() {
     Price().at(0) = 600;
     Price().at(1) = 60;
     Price().at(2) = 20;
 }
 
-int Sawmill::Profit() {
+int Sawmill::getProfit() {
     return 10;
 }
