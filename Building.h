@@ -6,7 +6,6 @@
 #define PROJECT_ZOO_MAIN_BUILDING_H
 #include <iostream>
 #include <array>
-
 #include "Player.h"
 
 class Building {
