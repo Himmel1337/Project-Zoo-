@@ -1,11 +1,12 @@
 #include <iostream>
 #include "Game.h"
-#include "Grid.h"
 
 int main() {
     Game* game = new Game();
+    game->printIntroduction();
+    game->createPlayer();
     game->start();
-    delete game;
 
+    delete game;
     return 0;
 }

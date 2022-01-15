@@ -3,4 +3,4 @@ project(Project)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Project main.cpp Game.cpp Game.h Grid.cpp Grid.h Building.cpp Building.h Player.cpp Player.h)
+add_executable(Project main.cpp Game.cpp Game.h Grid.cpp Grid.h Building.cpp Building.h Player.cpp Player.h PlayerBuilder/BankerPlayerBuilder.cpp PlayerBuilder/BankerPlayerBuilder.h PlayerBuilder/BlacksmithPlayerBuilder.cpp PlayerBuilder/BlacksmithPlayerBuilder.h PlayerBuilder/PlayerBuilder.cpp PlayerBuilder/PlayerBuilder.h PlayerBuilder/PlayerDirector.cpp PlayerBuilder/PlayerDirector.h PlayerBuilder/WoodCutterPlayerBuilder.cpp PlayerBuilder/WoodCutterPlayerBuilder.h)
