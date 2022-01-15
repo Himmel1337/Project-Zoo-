@@ -4,7 +4,7 @@
 
 #ifndef PROJECT_ZOO_PLAYER_H
 #define PROJECT_ZOO_PLAYER_H
-#include "Building.h"
+#include "AbstractBuilding/AbstractBuilding.h"
 #include <iostream>
 #include <array>
 

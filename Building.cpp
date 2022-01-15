@@ -1,7 +1,7 @@
 //
 // Created by xkochnev on 05.12.2021.
 //
-
+/*
 #include "Building.h"
 
 Building::Building(int type){
@@ -52,6 +52,6 @@ Building::~Building() {
 
 }
 
-
+*/
 
 
