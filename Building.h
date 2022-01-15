@@ -4,19 +4,11 @@
 
 #ifndef PROJECT_ZOO_MAIN_BUILDING_H
 #define PROJECT_ZOO_MAIN_BUILDING_H
-
-
 #include <iostream>
 #include <array>
 #include "Player.h"
-#include ""
 
 class Building {
-
-};
-/*
-class Building {
-
     int m_type;
     std::array<int, 3> m_price;
     int m_profit;
@@ -29,6 +21,6 @@ public:
     void setType(int type);
     ~Building();
 };
-*/
+
 
 #endif //PROJECT_ZOO_MAIN_BUILDING_H

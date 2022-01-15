@@ -9,11 +9,9 @@
 #include <array>
 #include "Building.h"
 #include "Player.h"
-#include "AbstractBuilding/AbstractBuilding.h"
 
 class Grid {
-    std::vector<AbstractBuilding*> m_building;
-
+    std::vector<Building*> m_building;
     std::array<std::array<int, 5>, 5> m_grid;
 
 public:
