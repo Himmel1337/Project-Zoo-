@@ -16,7 +16,9 @@ public:
 
     void printInfoAboutPlayer();
     std::array<int, 3> getResources();
+
     void putTheBuilding(int type);
+    void setResources(int count, int index);
     void setProfit(int profit, int type);
     void addResourceTurn();
     void market(int input);

@@ -6,10 +6,8 @@
 
 
 Player::Player(){
-    m_resources = {10000, 200, 200};
-    m_profit.at(0) = 0;
-    m_profit.at(1) = 0;
-    m_profit.at(2) = 0;
+    m_resources = {0, 0, 0};
+    m_profit = {0, 0, 0};
 }
 
 void Player::printInfoAboutPlayer() {
