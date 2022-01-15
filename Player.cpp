@@ -6,10 +6,8 @@
 
 
 Player::Player(){
-    m_resources = {10000, 200, 200};
-    m_profit.at(0) = 0;
-    m_profit.at(1) = 0;
-    m_profit.at(2) = 0;
+    m_resources = {0, 0, 0};
+    m_profit = {0, 0, 0};
 }
 
 void Player::printInfoAboutPlayer() {
@@ -30,12 +28,12 @@ void Player::setResources(int count, int index) {
     m_resources.at(index) += count;
 }
 
-void Player::setProfit(int profit, char type){
-    if (type == '$'){
+void Player::setProfit(int profit, int type){
+    if (type == 1){
         m_profit.at(0) += profit;
-    } else if (type == '@'){
+    } else if (type == 2){
         m_profit.at(1) += profit;
-    } else if (type == '#'){
+    } else if (type == 3){
         m_profit.at(2) += profit;
     }
 }

@@ -3,3 +3,13 @@
 //
 
 #include "WoodCutterPlayerBuilder.h"
+
+void WoodCutterPlayerBuilder::setResources(){
+    m_player->setResources(6000, 0);
+    m_player->setResources(800, 1);
+    m_player->setResources(400, 2);
+}
+
+void WoodCutterPlayerBuilder::setProfit(){
+    m_player->setProfit(40, 1);
+}
