@@ -65,7 +65,6 @@ void Game::start() {
         printOptions();
         int input = waitForInput();
         processInput(input);
-        m_player->addResourceTurn();
     }
 }
 
@@ -161,6 +160,7 @@ void Game::processInput(int input) {
                 winGame();
                 m_turns--;
                 std::cout<<m_turns<<" moves until Game Over."<<std::endl;
+                m_player->addResourceTurn();
                 break;
         default: std::cout << "Unsupported option!" << std::endl;
     }
