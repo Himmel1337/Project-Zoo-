@@ -21,6 +21,7 @@ public:
     int getTypeBuilding() const;
     void putTheBulding(int type, int x, int y);
     void destroyBuilding(int x, int y);
+    bool checkDirectionForDestroy(int x, int y) const;
     ~Grid();
 };
 

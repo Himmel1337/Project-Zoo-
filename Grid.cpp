@@ -36,6 +36,15 @@ bool Grid::checkDirection(int x, int y) const{
     }
 }
 
+bool Grid::checkDirectionForDestroy(int x, int y) const{
+    if (m_grid.at(x).at(y) != 0){
+        return true;
+    } else {
+        std::cout << "There is no buildings" << std::endl;
+        return false;
+    }
+}
+
 int Grid::getTypeBuilding() const{
     std::cout << "Select building type" << std::endl;
     std::cout << "[1]" << " Bank (1) " << std::endl;

@@ -12,7 +12,6 @@
 class Player {
     std::array<int, 3> m_resources;
     std::array<int, 3> m_profit;
-    int m_turns;
 public:
     Player();
 

@@ -86,6 +86,8 @@ void Game::printAvailablePosition() {
     if(m_player->checkResources(buildingType) == true){
         m_grid->putTheBulding(buildingType, x, y);
         m_player->putTheBuilding(buildingType);
+        m_turns--;
+        std::cout<<m_turns<<" moves until Game Over."<<std::endl;
     }
 }
 
@@ -98,10 +100,11 @@ void Game::destroyBuilding() {
     std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
     y--;
-    if(m_grid->checkDirection(x,y) == false){
+    if(m_grid->checkDirectionForDestroy(x,y) == true){
         m_grid->destroyBuilding(x,y);
+        m_turns--;
+        std::cout<<m_turns<<" moves until Game Over."<<std::endl;
     }else{
-        std::cout<<"Director is empty"<<std::endl;
         start();
     }
 
@@ -126,8 +129,22 @@ void Game::processInput(int input) {
             m_player->market(input);
         break;
         case 4:destroyBuilding();
-        case 8: std::cout << "The move is missed" << std::endl; break;
+        case 8: std::cout << "The move is missed" << std::endl;
+                m_turns--;
+                std::cout<<m_turns<<" moves until Game Over."<<std::endl;
+                break;
         default: std::cout << "Unsupported option!" << std::endl;
+    }
+
+}
+
+void Game::winGame() {
+    if(m_turns>=0 ){
+        if((m_player->checkResources(0)>12000) and (m_player->checkResources(1)>700) and (m_player->checkResources(2)>700)){
+            std::cout<<"Congratulations! You finally can build the Capitol!"<<std::endl;
+
+        }
+
     }
 }
 
