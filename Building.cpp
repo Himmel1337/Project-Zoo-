@@ -8,6 +8,17 @@
 #include "AbstractBuilding/Foundry.h"
 #include "AbstractBuilding/Sawmill.h"
 
+<<<<<<< HEAD
+=======
+Building::Building() {
+}
+
+
+
+/*
+Building::Building(int type){
+    setType(type);
+>>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f
 
 Building::Building(){
     m_abstractBuilding = nullptr;
@@ -74,3 +85,9 @@ Building::~Building() {
 
 }
 
+<<<<<<< HEAD
+=======
+
+
+*/
+>>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f

@@ -7,6 +7,10 @@
 
 Game::Game() {
     m_grid = new Grid();
+<<<<<<< HEAD
+=======
+    m_player = nullptr;
+>>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f
 }
 
 void Game::printIntroduction() const {
@@ -43,12 +47,24 @@ void Game::createPlayer(){
     switch (choice) {
         case 1:
             playerDirector = new PlayerDirector(new BankerPlayerBuilder());
+<<<<<<< HEAD
             break;
         case 2:
             playerDirector = new PlayerDirector(new WoodCutterPlayerBuilder());
             break;
         case 3:
             playerDirector = new PlayerDirector(new BlacksmithPlayerBuilder());
+=======
+            playerDirector->setPlayerBuilder(new BankerPlayerBuilder());
+            break;
+        case 2:
+            playerDirector = new PlayerDirector(new WoodCutterPlayerBuilder());
+            playerDirector->setPlayerBuilder(new WoodCutterPlayerBuilder());
+            break;
+        case 3:
+            playerDirector = new PlayerDirector(new BlacksmithPlayerBuilder());
+            playerDirector->setPlayerBuilder(new BlacksmithPlayerBuilder());
+>>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f
             break;
         default: std::cout << "Unsupported option!" << std::endl;
         createPlayer();
