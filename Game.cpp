@@ -129,12 +129,12 @@ void Game::destroyBuilding() {
 void Game::processInput(int input) {
     switch (input) {
         case 9: printEnd(); exit(0);
-        case 1: winGame();
-                if(m_grid->checkCapitol() == true){
+        case 1: if(m_grid->checkCapitol() == true){
                     std::cout<<"!!!VICTORY!!!"<<std::endl;
                     printEnd();
                     exit(0);
                 }
+                winGame();
                 printAvailablePosition();
                 break;
         case 2: m_player->printInfoAboutPlayer(); break;
@@ -153,12 +153,12 @@ void Game::processInput(int input) {
         break;
         case 4:destroyBuilding();
         case 8: std::cout << "The move is missed" << std::endl;
-                winGame();
                 if(m_grid->checkCapitol() == true){
                 std::cout<<"!!!VICTORY!!!"<<std::endl;
                 printEnd();
                 exit(0);
                 }
+                winGame();
                 m_turns--;
                 std::cout<<m_turns<<" moves until Game Over."<<std::endl;
                 break;
