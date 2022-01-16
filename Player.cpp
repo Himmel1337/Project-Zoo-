@@ -63,9 +63,7 @@ bool Player::checkResources(int type){
         m_resources.at(1) >= building->getCurrentPrice().at(1) and
         m_resources.at(2) >= building->getCurrentPrice().at(2)){
         check = true;
-    } else
-        std::cout<<"You don't have enough resources"<<std::endl;
-        check = false;
+    } else check = false;
     delete building;
     return check;
 }
