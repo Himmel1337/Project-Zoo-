@@ -104,9 +104,17 @@ void Game::destroyBuilding() {
     std::cout << "Input row [1-5]: " << std::endl;
     std::cin >> x;
     x--;
+    while(x>5 or x<1){
+        std::cout<<"Wrong row. Input row [1-5]:"<<std::endl;
+        std::cin>>x;
+    }
     int y = 0;
     std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
+    while(y>5 or y<1){
+        std::cout<<"Wrong column. Input column [1-5]:"<<std::endl;
+        std::cin>>y;
+    }
     y--;
     if(m_grid->checkDirectionForDestroy(x,y) == true){
         m_grid->destroyBuilding(x,y);
@@ -121,13 +129,13 @@ void Game::destroyBuilding() {
 void Game::processInput(int input) {
     switch (input) {
         case 9: printEnd(); exit(0);
-        case 1: printAvailablePosition();
-                winGame();
+        case 1: winGame();
                 if(m_grid->checkCapitol() == true){
                     std::cout<<"!!!VICTORY!!!"<<std::endl;
                     printEnd();
                     exit(0);
                 }
+                printAvailablePosition();
                 break;
         case 2: m_player->printInfoAboutPlayer(); break;
         case 3:
@@ -145,14 +153,14 @@ void Game::processInput(int input) {
         break;
         case 4:destroyBuilding();
         case 8: std::cout << "The move is missed" << std::endl;
-                m_turns--;
-                std::cout<<m_turns<<" moves until Game Over."<<std::endl;
                 winGame();
                 if(m_grid->checkCapitol() == true){
                 std::cout<<"!!!VICTORY!!!"<<std::endl;
                 printEnd();
                 exit(0);
                 }
+                m_turns--;
+                std::cout<<m_turns<<" moves until Game Over."<<std::endl;
                 break;
         default: std::cout << "Unsupported option!" << std::endl;
     }

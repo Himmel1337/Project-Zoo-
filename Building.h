@@ -18,6 +18,7 @@ public:
     Building();
     std::array<int, 3> getCurrentPrice();
     int getProfit();
+    int getType();
     void setPrice(std::array<int, 3> price);
     void setProfit(int profit);
     void setType(int type);
