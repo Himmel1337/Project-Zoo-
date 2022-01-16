@@ -73,10 +73,18 @@ void Game::printAvailablePosition() {
     int x = 0;
     std::cout << "Input row [1-5]: " << std::endl;
     std::cin >> x;
+    while(x>5 or x<1){
+        std::cout<<"Wrong row. Input row [1-5]:"<<std::endl;
+        std::cin>>x;
+    }
     x--;
     int y = 0;
     std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
+    while(y>5 or y<1){
+        std::cout<<"Wrong column. Input column [1-5]:"<<std::endl;
+        std::cin>>y;
+    }
     y--;
     if(m_grid->checkDirection(x,y) == false){
         start();
