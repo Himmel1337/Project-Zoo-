@@ -7,25 +7,10 @@
 #include <iostream>
 #include <array>
 #include "Player.h"
-<<<<<<< HEAD
 #include "AbstractBuilding/AbstractBuilding.h"
 
 class Building {
     AbstractBuilding* m_abstractBuilding;
-=======
-#include "../AbstractBuilding/AbstractBuilding.h"
-
-
-class Building {
-    AbstractBuilding* m_abstractBuilding;
-    std::array<AbstractBuilding*, 3> m_price;
-    AbstractBuilding* m_profit;
-public:
-    Building();
-
-    /*
-    int m_type;
->>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f
     std::array<int, 3> m_price;
     int m_profit;
     int m_type;
@@ -40,7 +25,6 @@ public:
     void setBuildingType(int type);
     void makeChanges();
     ~Building();
-     */
 };
 
 

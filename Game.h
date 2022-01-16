@@ -6,10 +6,7 @@
 #define PROJECT_GAME_H
 #include "Grid.h"
 #include "Player.h"
-<<<<<<< HEAD
 #include "Building.h"
-=======
->>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f
 #include "PlayerBuilder/PlayerBuilder.h"
 #include "PlayerBuilder/PlayerDirector.h"
 #include "PlayerBuilder/BankerPlayerBuilder.h"

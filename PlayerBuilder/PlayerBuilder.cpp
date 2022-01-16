@@ -5,11 +5,7 @@
 #include "PlayerBuilder.h"
 
 PlayerBuilder::PlayerBuilder() {
-<<<<<<< HEAD
     m_player = new Player();
-=======
-    m_player = nullptr;
->>>>>>> f53954fbfd038fc13d21090c6f1dd4628d76101f
 }
 
 void PlayerBuilder::createPlayer() {
