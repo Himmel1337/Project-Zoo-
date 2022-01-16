@@ -5,8 +5,10 @@
 #ifndef PROJECT_ZOO_PLAYER_H
 #define PROJECT_ZOO_PLAYER_H
 #include "Building.h"
+
 #include <iostream>
 #include <array>
+#include <vector>
 
 class Player {
     std::array<int, 3> m_resources;
@@ -16,7 +18,6 @@ public:
 
     void printInfoAboutPlayer();
     std::array<int, 3> getResources();
-
     void putTheBuilding(int type);
     void setResources(int count, int index);
     void setProfit(int profit, int type);

@@ -5,6 +5,7 @@
 #include "Game.h"
 #include <iostream>
 
+
 Game::Game() {
     m_grid = new Grid();
 }
@@ -86,6 +87,8 @@ void Game::printAvailablePosition() {
         m_player->putTheBuilding(buildingType);
     }
 }
+
+
 void Game::processInput(int input) {
     switch (input) {
         case 9: printEnd(); exit(0);
