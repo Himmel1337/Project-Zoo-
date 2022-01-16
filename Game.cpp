@@ -19,7 +19,7 @@ void Game::printOptions() const {
     std::cout << "[2] " << "Print resource player" << std::endl;
     std::cout << "[3] " << "Market" << std::endl;
     std::cout << "[4] " << "Destroy the building" << std::endl;
-    std::cout << "[8] " << "Skip turn" << std::endl;
+    std::cout << "[8] " << "Get resources" << std::endl;
     std::cout << "[9] " << "Exit game" << std::endl;
     std::cout << "Input number for action: " << std::endl;
 }
@@ -151,7 +151,7 @@ void Game::processInput(int input) {
             m_player->market(input);
         break;
         case 4:destroyBuilding();
-        case 8: std::cout << "The move is missed" << std::endl;
+        case 8: std::cout << "Resources received" << std::endl;
                 if(m_grid->checkCapitol() == true){
                 std::cout<<"!!!VICTORY!!!"<<std::endl;
                 printEnd();
