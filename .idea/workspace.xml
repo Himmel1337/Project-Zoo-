@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Project" targetName="Project" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3899b80d-822f-4bb1-96fc-1f0519f61869" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Bank.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Bank.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Foundry.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Foundry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Sawmill.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Sawmill.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BankerPlayerBuilder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BankerPlayerBuilder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BlacksmithPlayerBuilder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BlacksmithPlayerBuilder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerBuilder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerBuilder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerDirector.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerDirector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/WoodCutterPlayerBuilder.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PlayerBuilder/WoodCutterPlayerBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Building.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Building.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Building.h" beforeDir="false" afterPath="$PROJECT_DIR$/Building.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.2" />
+  </component>
+  <component name="ProjectId" id="23k6cd1MFpyiEKYUemZQLsiisvD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Project" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="Project">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3899b80d-822f-4bb1-96fc-1f0519f61869" name="Changes" comment="" />
+      <created>1642265827426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642265827426</updated>
+      <workItem from="1642265834846" duration="474000" />
+      <workItem from="1642266344638" duration="223000" />
+      <workItem from="1642266605877" duration="94000" />
+      <workItem from="1642266808908" duration="2320000" />
+      <workItem from="1642322318150" duration="3355000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
