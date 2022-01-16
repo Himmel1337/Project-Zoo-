@@ -73,4 +73,13 @@ void Grid::destroyBuilding(int x, int y){
     m_grid.at(x).at(y) = 0;
 }
 
+bool Grid::checkCapitol() {
+    for (int y = 0; y < m_grid.size(); y++) {
+        for (int x = 0; x < m_grid.at(y).size(); x++) {
+            if(m_grid.at(x).at(y) == 4){
+                return true;
+            }
+        }
+    }
+}
 Grid::~Grid(){}

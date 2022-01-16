@@ -121,7 +121,14 @@ void Game::destroyBuilding() {
 void Game::processInput(int input) {
     switch (input) {
         case 9: printEnd(); exit(0);
-        case 1: printAvailablePosition(); break;
+        case 1: printAvailablePosition();
+                winGame();
+                if(m_grid->checkCapitol() == true){
+                    std::cout<<"!!!VICTORY!!!"<<std::endl;
+                    printEnd();
+                    exit(0);
+                }
+                break;
         case 2: m_player->printInfoAboutPlayer(); break;
         case 3:
             std::cout << "Market" << std::endl;
@@ -140,6 +147,12 @@ void Game::processInput(int input) {
         case 8: std::cout << "The move is missed" << std::endl;
                 m_turns--;
                 std::cout<<m_turns<<" moves until Game Over."<<std::endl;
+                winGame();
+                if(m_grid->checkCapitol() == true){
+                std::cout<<"!!!VICTORY!!!"<<std::endl;
+                printEnd();
+                exit(0);
+                }
                 break;
         default: std::cout << "Unsupported option!" << std::endl;
     }
@@ -147,12 +160,15 @@ void Game::processInput(int input) {
 }
 
 void Game::winGame() {
-    if(m_turns>=0 ){
-        if((m_player->checkResources(0)>12000) and (m_player->checkResources(1)>700) and (m_player->checkResources(2)>700)){
-            std::cout<<"Congratulations! You finally can build the Capitol!"<<std::endl;
-
-        }
+    if((m_turns > 0) and (m_player->checkResources(4) == true)){
+        std::cout<<"Congratulations! You finally can build the Capitol!"<<std::endl;
     }
+    if(m_turns < 1) {
+        std::cout << "Game Over" << std::endl;
+        printEnd();
+        exit(0);
+    }
+
 }
 
 Game::~Game(){
