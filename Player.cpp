@@ -55,6 +55,16 @@ void Player::setResources(int count, int index){
     }
 }
 
+bool Player::checkResourcesForCapitol(int type) {
+    bool check;
+    Building *building = new Building();
+    building->setBuildingType(type);
+    if (m_resources.at(0) >= building->getCurrentPrice().at(0) and
+        m_resources.at(1) >= building->getCurrentPrice().at(1) and
+        m_resources.at(2) >= building->getCurrentPrice().at(2)) {
+        check = true;
+    }
+};
 bool Player::checkResources(int type){
     bool check;
     Building *building = new Building();

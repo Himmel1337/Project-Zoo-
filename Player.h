@@ -23,6 +23,7 @@ public:
     void addResourceTurn();
     void market(int input);
     bool checkResources(int type);
+    bool checkResourcesForCapitol(int type);
     ~Player();
 };
 

@@ -9,7 +9,7 @@ int Capitol::getType() {
 }
 
 std::array<int, 3> Capitol:: getPrice() {
-    std::array<int, 3> price = {12000, 700, 700};
+    std::array<int, 3> price = {10500, 400, 500};
     return price;
 }
 

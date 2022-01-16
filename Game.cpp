@@ -168,7 +168,7 @@ void Game::processInput(int input) {
 }
 
 void Game::winGame() {
-    if((m_turns > 0) and (m_player->checkResources(4) == true)){
+    if((m_turns > 0) and (m_player->checkResourcesForCapitol(4) == true)){
         std::cout<<"Congratulations! You finally can build the Capitol!"<<std::endl;
     }
     if(m_turns < 1) {
