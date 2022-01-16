@@ -11,7 +11,6 @@
 #include "Player.h"
 
 class Grid {
-    std::vector<Building*> m_building;
     std::array<std::array<int, 5>, 5> m_grid;
 
 public:
@@ -19,9 +18,7 @@ public:
     Grid();
     void print() const;
     bool checkDirection(int x, int y) const;
-    bool checkResources(Player* player) const;
     int getTypeBuilding() const;
-    void setPlayerResources(Player* player);
     void putTheBulding(int type, int x, int y);
     void destroyBuilding(int x, int y);
     ~Grid();

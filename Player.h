@@ -5,14 +5,14 @@
 #ifndef PROJECT_ZOO_PLAYER_H
 #define PROJECT_ZOO_PLAYER_H
 #include "Building.h"
-
 #include <iostream>
 #include <array>
-#include <vector>
+
 
 class Player {
     std::array<int, 3> m_resources;
     std::array<int, 3> m_profit;
+    int m_turns;
 public:
     Player();
 

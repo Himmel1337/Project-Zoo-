@@ -18,6 +18,7 @@ void Game::printOptions() const {
     std::cout << "[1] " << "Put the bulding" << std::endl;
     std::cout << "[2] " << "Print resource player" << std::endl;
     std::cout << "[3] " << "Market" << std::endl;
+    std::cout << "[4] " << "Destroy the building" << std::endl;
     std::cout << "[8] " << "Skip turn" << std::endl;
     std::cout << "[9] " << "Exit game" << std::endl;
     std::cout << "Input number for action: " << std::endl;
@@ -88,6 +89,23 @@ void Game::printAvailablePosition() {
     }
 }
 
+void Game::destroyBuilding() {
+    int x = 0;
+    std::cout << "Input row [1-5]: " << std::endl;
+    std::cin >> x;
+    x--;
+    int y = 0;
+    std::cout << "Input column [1-5]: " << std::endl;
+    std::cin >> y;
+    y--;
+    if(m_grid->checkDirection(x,y) == false){
+        m_grid->destroyBuilding(x,y);
+    }else{
+        std::cout<<"Director is empty"<<std::endl;
+        start();
+    }
+
+}
 
 void Game::processInput(int input) {
     switch (input) {
@@ -107,6 +125,7 @@ void Game::processInput(int input) {
             if (input == 5) start();
             m_player->market(input);
         break;
+        case 4:destroyBuilding();
         case 8: std::cout << "The move is missed" << std::endl; break;
         default: std::cout << "Unsupported option!" << std::endl;
     }

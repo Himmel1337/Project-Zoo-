@@ -1,4 +1,4 @@
-/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/178/bin/ninja/linux/ninja -G Ninja /home/xkudla/Documents/Mendel/ZOO/Project
+C:\Users\pco4n\AppData\Local\JetBrains\CLion2021.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/pco4n/Documents/GitHub/Project-Zoo-
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug
+-- Build files have been written to: /cygdrive/c/Users/pco4n/Documents/GitHub/Project-Zoo-/cmake-build-debug

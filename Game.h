@@ -4,7 +4,6 @@
 
 #ifndef PROJECT_GAME_H
 #define PROJECT_GAME_H
-#include <vector>
 #include "Grid.h"
 #include "Player.h"
 #include "Building.h"
@@ -19,12 +18,12 @@
 class Game {
     Grid* m_grid;
     Player* m_player;
-    std::vector<int> Action;
     void printOptions() const;
     void printAvailablePosition();
     int waitForInput() const;
     void printEnd() const;
     void processInput(int input);
+    void destroyBuilding();
 
 
 public:

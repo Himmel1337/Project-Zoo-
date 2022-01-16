@@ -61,7 +61,7 @@ void Grid::putTheBulding(int type, int x, int y){
 }
 
 void Grid::destroyBuilding(int x, int y){
-
+    m_grid.at(x).at(y) = 0;
 }
 
 Grid::~Grid(){}
