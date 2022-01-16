@@ -27,7 +27,7 @@ std::array<int, 3> Player::getResources() {
 void Player::putTheBuilding(int type) {
     if(checkResources(type) == true){
         Building *building = new Building();
-        building->setType(type);
+        building->setBuildingType(type);
         m_resources.at(0) -= building->getCurrentPrice().at(0);
         m_resources.at(1) -= building->getCurrentPrice().at(1);
         m_resources.at(2) -= building->getCurrentPrice().at(2);
@@ -45,10 +45,20 @@ void Player::setProfit(int profit, int type){
     }
 }
 
+void Player::setResources(int count, int index){
+    if (index == 1){
+        m_resources.at(0) += count;
+    } else if (index == 2){
+        m_resources.at(1) += count;
+    } else if (index == 3){
+        m_resources.at(2) += count;
+    }
+}
+
 bool Player::checkResources(int type){
     bool check;
     Building *building = new Building();
-    building->setType(type);
+    building->setBuildingType(type);
     if (m_resources.at(0) >= building->getCurrentPrice().at(0) and
         m_resources.at(1) >= building->getCurrentPrice().at(1) and
         m_resources.at(2) >= building->getCurrentPrice().at(2)){

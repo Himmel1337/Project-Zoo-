@@ -6,21 +6,29 @@
 #define PROJECT_GAME_H
 #include "Grid.h"
 #include "Player.h"
+#include "Building.h"
+#include "PlayerBuilder/PlayerBuilder.h"
+#include "PlayerBuilder/PlayerDirector.h"
+#include "PlayerBuilder/BankerPlayerBuilder.h"
+#include "PlayerBuilder/BlacksmithPlayerBuilder.h"
+#include "PlayerBuilder/WoodCutterPlayerBuilder.h"
+
 
 
 class Game {
     Grid* m_grid;
     Player* m_player;
-
-    void printIntroduction() const;
     void printOptions() const;
     void printAvailablePosition();
     int waitForInput() const;
     void printEnd() const;
     void processInput(int input);
 
+
 public:
     Game();
+    void printIntroduction() const;
+    void createPlayer();
     void start();
     ~Game();
 

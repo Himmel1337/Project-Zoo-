@@ -3,37 +3,60 @@
 //
 
 #include "Building.h"
+#include "AbstractBuilding/AbstractBuilding.h"
+#include "AbstractBuilding/Bank.h"
+#include "AbstractBuilding/Foundry.h"
+#include "AbstractBuilding/Sawmill.h"
 
-Building::Building(int type){
-    setType(type);
 
+Building::Building(){
+    m_abstractBuilding = nullptr;
+    m_type = 0;
+    m_profit = 0;
+    m_price = {0, 0, 0};
 }
-Building::Building(){};
 
-void Building::setType(int type) {
+void Building::setBuildingType(int type){
     m_type = type;
-    if (type == 1){
-        m_price.at(0) = 300;
-        m_price.at(1) = 30;
-        m_price.at(2) = 10;
-        m_profit = 100;
-    } else if (type == 2) {
-        m_price.at(0) = 500;
-        m_price.at(1) = 60;
-        m_price.at(2) = 20;
-        m_profit = 10;
-    } else if (type == 3){
-        m_price.at(0) = 700;
-        m_price.at(1) = 60;
-        m_price.at(2) = 60;
-        m_profit = 10;
-    } else {
-        std::cout << "Building is not exist" << std::endl;
+    if (m_abstractBuilding != nullptr){
+        delete m_abstractBuilding;
+    }
+    switch (type) {
+        case 1:
+            m_abstractBuilding = new Bank();
+            makeChanges();
+            break;
+        case 2:
+            m_abstractBuilding = new Sawmill();
+            makeChanges();
+            break;
+        case 3:
+            m_abstractBuilding = new Foundry();
+            makeChanges();
+            break;
+        default: throw std::invalid_argument("Building type does not exist");
     }
 }
 
 
+void Building::setPrice(std::array<int, 3> price){
+    m_price = price;
+}
 
+void Building::setProfit(int profit){
+    m_profit = profit;
+}
+
+void Building::setType(int type){
+    m_type = type;
+}
+
+
+void Building::makeChanges(){
+    setPrice(m_abstractBuilding->getPrice());
+    setProfit(m_abstractBuilding->getProfit());
+    setType(m_abstractBuilding->getType());
+}
 
 std::array<int, 3> Building::getCurrentPrice() {
     return m_price;
@@ -47,11 +70,7 @@ int Building::getType() {
     return m_type;
 }
 
-
 Building::~Building() {
 
 }
-
-
-
 

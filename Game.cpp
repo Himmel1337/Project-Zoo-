@@ -7,7 +7,6 @@
 
 Game::Game() {
     m_grid = new Grid();
-    m_player = new Player();
 }
 
 void Game::printIntroduction() const {
@@ -33,9 +32,32 @@ void Game::printEnd() const {
     std::cout << "Game ended" << std::endl;
 }
 
-void Game::start() {
-    printIntroduction();
+void Game::createPlayer(){
+    std::cout << "[1] " << "Banker" << std::endl;
+    std::cout << "[2] " << "Woodcutter" << std::endl;
+    std::cout << "[3] " << "Blacksmith" << std::endl;
+    std::cout << "Choose a player: " << std::endl;
+    PlayerDirector *playerDirector;
+    int choice;
+    std::cin >> choice;
+    switch (choice) {
+        case 1:
+            playerDirector = new PlayerDirector(new BankerPlayerBuilder());
+            break;
+        case 2:
+            playerDirector = new PlayerDirector(new WoodCutterPlayerBuilder());
+            break;
+        case 3:
+            playerDirector = new PlayerDirector(new BlacksmithPlayerBuilder());
+            break;
+        default: std::cout << "Unsupported option!" << std::endl;
+        createPlayer();
+    }
+    m_player = playerDirector->constructPlayer();
+    delete playerDirector;
+}
 
+void Game::start() {
     while (true) {
         m_grid->print();
         printOptions();
@@ -57,10 +79,11 @@ void Game::printAvailablePosition() {
     if(m_grid->checkDirection(x,y) == false){
         start();
     }
-    int buildingType=m_grid->getTypeBuilding();
-    m_player->putTheBuilding(buildingType);
+    int buildingType = m_grid->getTypeBuilding();
+
     if(m_player->checkResources(buildingType) == true){
         m_grid->putTheBulding(buildingType, x, y);
+        m_player->putTheBuilding(buildingType);
     }
 }
 void Game::processInput(int input) {
