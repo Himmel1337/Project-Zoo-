@@ -3,7 +3,6 @@
 //
 
 #include "Building.h"
-#include "AbstractBuilding/AbstractBuilding.h"
 #include "AbstractBuilding/Bank.h"
 #include "AbstractBuilding/Foundry.h"
 #include "AbstractBuilding/Sawmill.h"

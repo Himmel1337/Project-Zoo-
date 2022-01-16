@@ -1,5 +1,5 @@
 //
-// Created by pco4n on 16.01.2022.
+// Created by xkochnev on 16.01.2022.
 //
 
 #include "Capitol.h"
