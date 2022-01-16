@@ -50,6 +50,7 @@ int Grid::getTypeBuilding() const{
     std::cout << "[1]" << " Bank (1) " << std::endl;
     std::cout << "[2]" << " Smeltery (2) " << std::endl;
     std::cout << "[3]" << " Sawmill (3) " << std::endl;
+    std::cout << "[4]" << " The Capitol (4) " << std::endl;
     int choiseBuilding;
     std::cin >> choiseBuilding;
     if(choiseBuilding == 1){
@@ -58,6 +59,8 @@ int Grid::getTypeBuilding() const{
         return 2;
     } else if (choiseBuilding == 3){
         return 3;
+    } else if (choiseBuilding == 4){
+        return 4;
     } else {
         std::cout << "Wrong choice of building" << std::endl;
         return 0;

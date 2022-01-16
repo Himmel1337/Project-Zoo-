@@ -7,6 +7,8 @@
 #include "AbstractBuilding/Bank.h"
 #include "AbstractBuilding/Foundry.h"
 #include "AbstractBuilding/Sawmill.h"
+#include "AbstractBuilding/Capitol.h"
+
 
 
 Building::Building(){
@@ -34,6 +36,11 @@ void Building::setBuildingType(int type){
             m_abstractBuilding = new Foundry();
             makeChanges();
             break;
+        case 4:
+            m_abstractBuilding = new Capitol();
+            makeChanges();
+            break;
+
         default: throw std::invalid_argument("Building type does not exist");
     }
 }
