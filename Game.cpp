@@ -103,15 +103,15 @@ void Game::destroyBuilding() {
     int x = 0;
     std::cout << "Input row [1-5]: " << std::endl;
     std::cin >> x;
-    x--;
-    while(x > 4 or x < 0){
+    while(x > 5 or x < 1){
         std::cout<<"Wrong row. Input row [1-5]:"<<std::endl;
         std::cin>>x;
     }
+    x--;
     int y = 0;
     std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
-    while(y > 4 or y < 0){
+    while(y > 5 or y < 1){
         std::cout<<"Wrong column. Input column [1-5]:"<<std::endl;
         std::cin>>y;
     }
