@@ -54,6 +54,10 @@ int Grid::getTypeBuilding() const{
 
     int choiseBuilding;
     std::cin >> choiseBuilding;
+    while(choiseBuilding > 4 or choiseBuilding < 1){
+        std::cout << "Wrong choice of building" << std::endl;
+        std::cin>>choiseBuilding;
+    }
     if(choiseBuilding == 1){
         return 1;
     } else if(choiseBuilding == 2){
@@ -62,9 +66,6 @@ int Grid::getTypeBuilding() const{
         return 3;
     } else if (choiseBuilding == 4){
         return 4;
-    } else {
-        std::cout << "Wrong choice of building" << std::endl;
-        return 0;
     }
 }
 
