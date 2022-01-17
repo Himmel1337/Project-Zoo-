@@ -15,35 +15,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3899b80d-822f-4bb1-96fc-1f0519f61869" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Bank.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Bank.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Foundry.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Foundry.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Sawmill.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Sawmill.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BankerPlayerBuilder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BankerPlayerBuilder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BlacksmithPlayerBuilder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/BlacksmithPlayerBuilder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerBuilder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerBuilder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerDirector.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/PlayerDirector.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/WoodCutterPlayerBuilder.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlayerBuilder/WoodCutterPlayerBuilder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Capitol.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AbstractBuilding/Capitol.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ErrorLoger.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Errorlogger.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Errorlogger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractBuilding/AbstractBuilding.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractBuilding/Bank.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractBuilding/Bank.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AbstractBuilding/Bank.h" beforeDir="false" afterPath="$PROJECT_DIR$/AbstractBuilding/Bank.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Building.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Building.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Building.h" beforeDir="false" afterPath="$PROJECT_DIR$/Building.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Grid.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Grid.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-633f638dc2edf76b38e6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-01-16T08-42-49-0251.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Project-Debug-369e2a33c53a55b38195.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Building.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Building.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Game.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Game.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Grid.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Grid.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Player.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/Player.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/BankerPlayerBuilder.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/BankerPlayerBuilder.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/BlacksmithPlayerBuilder.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/BlacksmithPlayerBuilder.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/PlayerBuilder.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/PlayerBuilder.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/PlayerDirector.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/PlayerDirector.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/WoodCutterPlayerBuilder.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/PlayerBuilder/WoodCutterPlayerBuilder.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +91,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -93,7 +103,7 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Project" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="Project">
+    <configuration name="Project" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="Project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="Project">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -112,6 +122,9 @@
       <workItem from="1642266605877" duration="94000" />
       <workItem from="1642266808908" duration="2320000" />
       <workItem from="1642322318150" duration="3355000" />
+      <workItem from="1642326307709" duration="35000" />
+      <workItem from="1642332002224" duration="26000" />
+      <workItem from="1642407712728" duration="1051000" />
     </task>
     <servers />
   </component>

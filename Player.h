@@ -7,6 +7,7 @@
 #include "Building.h"
 #include <iostream>
 #include <array>
+#include "Errorlogger.h"
 
 class Player {
     std::array<int, 3> m_resources;
@@ -16,13 +17,13 @@ public:
 
     void printInfoAboutPlayer();
     std::array<int, 3> getResources();
-
     void putTheBuilding(int type);
     void setResources(int count, int index);
     void setProfit(int profit, int type);
     void addResourceTurn();
     void market(int input);
     bool checkResources(int type);
+    bool checkResourcesForCapitol(int type);
     ~Player();
 };
 

@@ -8,6 +8,7 @@
 #include <array>
 #include "Player.h"
 #include "AbstractBuilding/AbstractBuilding.h"
+#include "Errorlogger.h"
 
 class Building {
     AbstractBuilding* m_abstractBuilding;

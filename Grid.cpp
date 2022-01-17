@@ -36,11 +36,22 @@ bool Grid::checkDirection(int x, int y) const{
     }
 }
 
+bool Grid::checkDirectionForDestroy(int x, int y) const{
+    if (m_grid.at(x).at(y) != 0){
+        return true;
+    } else {
+        std::cout << "There is no buildings" << std::endl;
+        return false;
+    }
+}
+
 int Grid::getTypeBuilding() const{
     std::cout << "Select building type" << std::endl;
     std::cout << "[1]" << " Bank (1) " << std::endl;
     std::cout << "[2]" << " Smeltery (2) " << std::endl;
     std::cout << "[3]" << " Sawmill (3) " << std::endl;
+    std::cout << "[4] " << "Capitol (4)" << std::endl;
+
     int choiseBuilding;
     std::cin >> choiseBuilding;
     if(choiseBuilding == 1){
@@ -49,6 +60,8 @@ int Grid::getTypeBuilding() const{
         return 2;
     } else if (choiseBuilding == 3){
         return 3;
+    } else if (choiseBuilding == 4){
+        return 4;
     } else {
         std::cout << "Wrong choice of building" << std::endl;
         return 0;
@@ -61,7 +74,16 @@ void Grid::putTheBulding(int type, int x, int y){
 }
 
 void Grid::destroyBuilding(int x, int y){
-
+    m_grid.at(x).at(y) = 0;
 }
 
+bool Grid::checkCapitol() {
+    for (int y = 0; y < m_grid.size(); y++) {
+        for (int x = 0; x < m_grid.at(y).size(); x++) {
+            if(m_grid.at(x).at(y) == 4){
+                return true;
+            }
+        }
+    }
+}
 Grid::~Grid(){}

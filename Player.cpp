@@ -55,6 +55,16 @@ void Player::setResources(int count, int index){
     }
 }
 
+bool Player::checkResourcesForCapitol(int type) {
+    bool check;
+    Building *building = new Building();
+    building->setBuildingType(type);
+    if (m_resources.at(0) >= building->getCurrentPrice().at(0) and
+        m_resources.at(1) >= building->getCurrentPrice().at(1) and
+        m_resources.at(2) >= building->getCurrentPrice().at(2)) {
+        check = true;
+    }
+};
 bool Player::checkResources(int type){
     bool check;
     Building *building = new Building();
@@ -63,7 +73,10 @@ bool Player::checkResources(int type){
         m_resources.at(1) >= building->getCurrentPrice().at(1) and
         m_resources.at(2) >= building->getCurrentPrice().at(2)){
         check = true;
-    } else check = false;
+    } else {
+        check = false;
+        std::cout << "You don't have enough resources. " << std::endl;
+    }
     delete building;
     return check;
 }
@@ -80,19 +93,19 @@ void Player::market(int input){
             if (m_resources.at(0) >= 100) {
                 m_resources.at(0) -= 100;
                 m_resources.at(1) += 10;
-            } else std::cout << "Нou don't have enough money";
+            } else std::cout << "You don't have enough money";
             break;
         case 2:
             if (m_resources.at(0) >= 100) {
                 m_resources.at(0) -= 100;
                 m_resources.at(2) += 10;
-            } else std::cout << "Нou don't have enough money";
+            } else std::cout << "You don't have enough money";
             break;
         case 3:
             if (m_resources.at(1) >= 10) {
                 m_resources.at(0) += 80;
                 m_resources.at(1) -= 10;
-            } else std::cout << "Нou don't have enough wood";
+            } else std::cout << "You don't have enough wood";
             break;
         case 4:
             if (m_resources.at(2) >= 10) {

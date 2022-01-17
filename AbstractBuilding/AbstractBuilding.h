@@ -1,5 +1,5 @@
 //
-// Created by pco4n on 15.01.2022.
+// Created by xkochnev on 15.01.2022.
 //
 
 #ifndef PROJECT_ZOO_ABSTRACTBUILDING_H

@@ -156,6 +156,18 @@ build CMakeFiles/Project.dir/AbstractBuilding/Sawmill.cpp.o: CXX_COMPILER__Proje
   OBJECT_DIR = CMakeFiles/Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Project.dir/AbstractBuilding
 
+build CMakeFiles/Project.dir/AbstractBuilding/Capitol.cpp.o: CXX_COMPILER__Project_Debug /home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Capitol.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/AbstractBuilding/Capitol.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/AbstractBuilding
+
+build CMakeFiles/Project.dir/Errorlogger.cpp.o: CXX_COMPILER__Project_Debug /home/xkudla/Documents/Mendel/ZOO/Project/Errorlogger.cpp || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/Errorlogger.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Project
@@ -164,7 +176,7 @@ build CMakeFiles/Project.dir/AbstractBuilding/Sawmill.cpp.o: CXX_COMPILER__Proje
 #############################################
 # Link the executable Project
 
-build Project: CXX_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/Game.cpp.o CMakeFiles/Project.dir/Grid.cpp.o CMakeFiles/Project.dir/Building.cpp.o CMakeFiles/Project.dir/Player.cpp.o CMakeFiles/Project.dir/PlayerBuilder/BankerPlayerBuilder.cpp.o CMakeFiles/Project.dir/PlayerBuilder/BlacksmithPlayerBuilder.cpp.o CMakeFiles/Project.dir/PlayerBuilder/PlayerBuilder.cpp.o CMakeFiles/Project.dir/PlayerBuilder/PlayerDirector.cpp.o CMakeFiles/Project.dir/PlayerBuilder/WoodCutterPlayerBuilder.cpp.o CMakeFiles/Project.dir/AbstractBuilding/AbstractBuilding.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Bank.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Foundry.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Sawmill.cpp.o
+build Project: CXX_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/Game.cpp.o CMakeFiles/Project.dir/Grid.cpp.o CMakeFiles/Project.dir/Building.cpp.o CMakeFiles/Project.dir/Player.cpp.o CMakeFiles/Project.dir/PlayerBuilder/BankerPlayerBuilder.cpp.o CMakeFiles/Project.dir/PlayerBuilder/BlacksmithPlayerBuilder.cpp.o CMakeFiles/Project.dir/PlayerBuilder/PlayerBuilder.cpp.o CMakeFiles/Project.dir/PlayerBuilder/PlayerDirector.cpp.o CMakeFiles/Project.dir/PlayerBuilder/WoodCutterPlayerBuilder.cpp.o CMakeFiles/Project.dir/AbstractBuilding/AbstractBuilding.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Bank.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Foundry.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Sawmill.cpp.o CMakeFiles/Project.dir/AbstractBuilding/Capitol.cpp.o CMakeFiles/Project.dir/Errorlogger.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Project.dir
   POST_BUILD = :

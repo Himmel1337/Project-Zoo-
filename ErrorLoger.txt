@@ -1,0 +1,5 @@
+Class: Building. method: setBuildingType. Building type does not exist
+Class: Building. method: setBuildingType. Building type does not exist
+Class: Building. method: setBuildingType. Building type does not exist
+Class: Building. method: setBuildingType. Building type does not exist
+Class: Building. method: setBuildingType. Building type does not exist
