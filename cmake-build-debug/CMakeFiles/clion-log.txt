@@ -1,4 +1,7 @@
-/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/178/bin/ninja/linux/ninja -G Ninja /home/xkudla/Documents/Mendel/ZOO/Project
--- Configuring done
--- Generating done
--- Build files have been written to: /home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug
+/snap/clion/178/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xkudla/Documents/Mendel/ZOO/Project
+CMake Error at CMakeLists.txt:6:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "<<<<<<<".
+
+
+-- Configuring incomplete, errors occurred!
