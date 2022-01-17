@@ -38,12 +38,7 @@ void Building::setBuildingType(int type){
             m_abstractBuilding = new Capitol();
             makeChanges();
             break;
-<<<<<<< HEAD
-        default:
-            ErrorLogger::writeError("Class: Building. method: setBuildingType. Building type does not exist");
-=======
-        default: throw std::invalid_argument("Building type does not exist");
->>>>>>> 27dac36c30cc72cd700f15bcd3c7e71264e800d2
+        default: ErrorLogger::writeError("Class: Building. method: setBuildingType. Building type does not exist");
     }
 }
 

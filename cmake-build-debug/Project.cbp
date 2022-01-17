@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project">
+				<Option output="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Project/fast">
+				<Option output="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/xkudla/Documents/Mendel/ZOO/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/AbstractBuilding.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/AbstractBuilding.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Bank.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Bank.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Capitol.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Capitol.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Foundry.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Foundry.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Sawmill.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/AbstractBuilding/Sawmill.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Building.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Building.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Errorlogger.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Errorlogger.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Game.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Game.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Grid.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Grid.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Player.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/Player.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/BankerPlayerBuilder.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/BankerPlayerBuilder.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/BlacksmithPlayerBuilder.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/BlacksmithPlayerBuilder.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/PlayerBuilder.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/PlayerBuilder.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/PlayerDirector.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/PlayerDirector.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/WoodCutterPlayerBuilder.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/PlayerBuilder/WoodCutterPlayerBuilder.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/main.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/home/xkudla/Documents/Mendel/ZOO/Project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

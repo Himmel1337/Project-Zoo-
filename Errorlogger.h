@@ -9,7 +9,7 @@
 #include <fstream>
 
 class ErrorLogger{
-    static ErrorLogger* s_ErrorLogger;
+    static ErrorLogger* s_errorLogger;
     std::vector<std::string> m_errors;
 public:
     static ErrorLogger* getLogger();

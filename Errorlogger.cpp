@@ -5,13 +5,13 @@
 
 #include "Errorlogger.h"
 
-ErrorLogger* ErrorLogger::s_ErrorLogger = nullptr;
+ErrorLogger* ErrorLogger::s_errorLogger = nullptr;
 
 ErrorLogger* ErrorLogger::getLogger(){
-    if (s_ErrorLogger == nullptr){
-        s_ErrorLogger = new ErrorLogger();
+    if (s_errorLogger == nullptr){
+        s_errorLogger = new ErrorLogger();
     }
-    return s_ErrorLogger;
+    return s_errorLogger;
 }
 
 void ErrorLogger::writeError(std::string textError){
@@ -42,6 +42,8 @@ void ErrorLogger::loadErrorrs(){
             m_errors.push_back(text);
         }
         file.close();
+    } else {
+        std::cout << "File is not open" << std::endl;
     }
 }
 

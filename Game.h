@@ -16,9 +16,9 @@
 
 
 class Game {
-    ErrorLogger* m_errorLogger;
     Grid* m_grid;
     Player* m_player;
+    ErrorLogger* errors = nullptr;
     int m_turns = 30;
     void printOptions() const;
     void printAvailablePosition();

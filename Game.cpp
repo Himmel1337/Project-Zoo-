@@ -8,7 +8,6 @@
 
 Game::Game() {
     m_grid = new Grid();
-    m_errorLogger = ErrorLogger::getLogger();
 }
 
 void Game::printIntroduction() const {
@@ -96,7 +95,7 @@ void Game::printAvailablePosition() {
         m_player->putTheBuilding(buildingType);
         m_turns--;
         std::cout<<m_turns<<" moves until Game Over."<<std::endl;
-<<<<<<< HEAD
+
     }
 }
 
@@ -105,14 +104,14 @@ void Game::destroyBuilding() {
     std::cout << "Input row [1-5]: " << std::endl;
     std::cin >> x;
     x--;
-    while(x>5 or x<1){
+    while(x > 4 or x < 0){
         std::cout<<"Wrong row. Input row [1-5]:"<<std::endl;
         std::cin>>x;
     }
     int y = 0;
     std::cout << "Input column [1-5]: " << std::endl;
     std::cin >> y;
-    while(y>5 or y<1){
+    while(y > 4 or y < 0){
         std::cout<<"Wrong column. Input column [1-5]:"<<std::endl;
         std::cin>>y;
     }
@@ -123,48 +122,24 @@ void Game::destroyBuilding() {
         std::cout<<m_turns<<" moves until Game Over."<<std::endl;
     }else{
         start();
-=======
->>>>>>> 27dac36c30cc72cd700f15bcd3c7e71264e800d2
+
     }
 
 }
 
-<<<<<<< HEAD
-=======
-void Game::destroyBuilding() {
-    int x = 0;
-    std::cout << "Input row [1-5]: " << std::endl;
-    std::cin >> x;
-    x--;
-    while(x>5 or x<1){
-        std::cout<<"Wrong row. Input row [1-5]:"<<std::endl;
-        std::cin>>x;
-    }
-    int y = 0;
-    std::cout << "Input column [1-5]: " << std::endl;
-    std::cin >> y;
-    while(y>5 or y<1){
-        std::cout<<"Wrong column. Input column [1-5]:"<<std::endl;
-        std::cin>>y;
-    }
-    y--;
-    if(m_grid->checkDirectionForDestroy(x,y) == true){
-        m_grid->destroyBuilding(x,y);
-        m_turns--;
-        std::cout<<m_turns<<" moves until Game Over."<<std::endl;
-    }else{
-        start();
-    }
-
-}
-
->>>>>>> 27dac36c30cc72cd700f15bcd3c7e71264e800d2
 void Game::processInput(int input) {
     switch (input) {
-        case 9: printEnd(); exit(0);
+        case 9:
+            printEnd();
+            errors = ErrorLogger::getLogger();
+            errors->printErrors();
+            exit(0);
+            break;
         case 1: if(m_grid->checkCapitol() == true){
                     std::cout<<"!!!VICTORY!!!"<<std::endl;
                     printEnd();
+                    errors = ErrorLogger::getLogger();
+                    errors->printErrors();
                     exit(0);
                 }
                 winGame();
@@ -189,6 +164,8 @@ void Game::processInput(int input) {
                 if(m_grid->checkCapitol() == true){
                 std::cout<<"!!!VICTORY!!!"<<std::endl;
                 printEnd();
+                errors = ErrorLogger::getLogger();
+                errors->printErrors();
                 exit(0);
                 }
                 winGame();
@@ -196,11 +173,7 @@ void Game::processInput(int input) {
                 std::cout<<m_turns<<" moves until Game Over."<<std::endl;
                 m_player->addResourceTurn();
                 break;
-<<<<<<< HEAD
-        case 99: m_errorLogger->printErrors();
 
-=======
->>>>>>> 27dac36c30cc72cd700f15bcd3c7e71264e800d2
         default: std::cout << "Unsupported option!" << std::endl;
     }
 
@@ -213,6 +186,8 @@ void Game::winGame() {
     if(m_turns < 1) {
         std::cout << "Game Over" << std::endl;
         printEnd();
+        errors = ErrorLogger::getLogger();
+        errors->printErrors();
         exit(0);
     }
 
